@@ -1,0 +1,269 @@
+DEBUG 2025-11-14 08:44:56 d_metavar.py:22 Metavar for type None: None
+DEBUG 2025-11-14 08:44:56 formatter.py:52 action type: None, Result: , nargs: 0, default metavar: None
+DEBUG 2025-11-14 08:44:56 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 08:44:56 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 08:44:56 _wrapper.py:168 wrapped field at host has a default value of localhost
+DEBUG 2025-11-14 08:44:56 _wrapper.py:168 wrapped field at port has a default value of 8080
+DEBUG 2025-11-14 08:44:56 _wrapper.py:168 wrapped field at fps has a default value of 30
+DEBUG 2025-11-14 08:44:56 _wrapper.py:168 wrapped field at inference_latency has a default value of 0.03333333333333333
+DEBUG 2025-11-14 08:44:56 _wrapper.py:168 wrapped field at obs_queue_timeout has a default value of 2
+DEBUG 2025-11-14 08:44:56 _wrapper.py:309 Arg options for field 'host': {'required': False, 'dest': 'host', 'default': 'localhost', 'help': 'Networking configuration', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:44:56 _wrapper.py:309 Arg options for field 'port': {'required': False, 'dest': 'port', 'default': 8080, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:44:56 _wrapper.py:309 Arg options for field 'fps': {'required': False, 'dest': 'fps', 'default': 30, 'help': 'Timing configuration', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:44:56 ocstring.py:253 Warning: Unable to parse attribute docstring:         default=DEFAULT_INFERENCE_LATENCY, metadata={"help": "Target inference latency in seconds"}
+DEBUG 2025-11-14 08:44:56 _wrapper.py:309 Arg options for field 'inference_latency': {'required': False, 'dest': 'inference_latency', 'default': 0.03333333333333333, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:44:56 ocstring.py:253 Warning: Unable to parse attribute docstring:         default=DEFAULT_OBS_QUEUE_TIMEOUT, metadata={"help": "Timeout for observation queue in seconds"}
+DEBUG 2025-11-14 08:44:56 _wrapper.py:309 Arg options for field 'obs_queue_timeout': {'required': False, 'dest': 'obs_queue_timeout', 'default': 2, 'help': '\n', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:44:56 gparsing.py:143 
+POST PROCESSING
+
+DEBUG 2025-11-14 08:44:56 gparsing.py:144 (raw) parsed args: Namespace(host='0.0.0.0', port='8888', fps='30', inference_latency='0.033', obs_queue_timeout='1')
+DEBUG 2025-11-14 08:44:56 decoding.py:112 from_dict for <class 'lerobot.scripts.server.configs.PolicyServerConfig'>
+DEBUG 2025-11-14 08:44:56 decoding.py:132 Decode name = host, type = <class 'str'>
+DEBUG 2025-11-14 08:44:56 decoding.py:132 Decode name = port, type = <class 'int'>
+DEBUG 2025-11-14 08:44:56 decoding.py:132 Decode name = fps, type = <class 'int'>
+DEBUG 2025-11-14 08:44:56 decoding.py:132 Decode name = inference_latency, type = <class 'float'>
+DEBUG 2025-11-14 08:44:56 decoding.py:132 Decode name = obs_queue_timeout, type = <class 'float'>
+INFO 2025-11-14 08:44:56 y_server.py:384 {'fps': 30,
+ 'host': '0.0.0.0',
+ 'inference_latency': 0.033,
+ 'obs_queue_timeout': 1.0,
+ 'port': 8888}
+INFO 2025-11-14 08:44:56 y_server.py:394 PolicyServer started on 0.0.0.0:8888
+INFO 2025-11-14 08:46:55 y_server.py:104 Client ipv4:127.0.0.1:55638 connected and ready
+INFO 2025-11-14 08:46:55 y_server.py:130 Receiving policy instructions from ipv4:127.0.0.1:55638 | Policy type: act | Pretrained name or path: outputs/11-12/act/checkpoints/last/pretrained_model | Actions per chunk: 50 | Device: cuda
+DEBUG 2025-11-14 08:46:55 d_metavar.py:22 Metavar for type None: None
+DEBUG 2025-11-14 08:46:55 formatter.py:52 action type: None, Result: , nargs: 0, default metavar: None
+DEBUG 2025-11-14 08:46:55 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 08:46:55 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at n_obs_steps has a default value of 1
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at normalization_mapping has a default value of {}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at input_features has a default value of {}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at output_features has a default value of {}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at device has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at use_amp has a default value of False
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at push_to_hub has a default value of True
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at repo_id has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at private has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at tags has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at license has a default value of None
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             current step and additional steps going back).
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'n_obs_steps': {'required': False, 'dest': 'n_obs_steps', 'default': 1, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'normalization_mapping': {'required': False, 'dest': 'normalization_mapping', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.NormalizationMode]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'input_features': {'required': False, 'dest': 'input_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'output_features': {'required': False, 'dest': 'output_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'device': {'required': False, 'dest': 'device', 'default': None, 'help': 'cuda | cpu | mp', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'use_amp': {'required': False, 'dest': 'use_amp', 'default': False, 'help': '`use_amp` determines whether to use Automatic Mixed Precision (AMP) for training and evaluation. With AMP,\nautomatic gradient scaling is used.', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'push_to_hub': {'required': False, 'dest': 'push_to_hub', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'repo_id': {'required': False, 'dest': 'repo_id', 'default': None, 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'private': {'required': False, 'dest': 'private', 'default': None, 'help': 'Upload on private repository on the Hugging Face hub.', 'type': typing.Optional[bool]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'tags': {'required': False, 'dest': 'tags', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[typing.List[str]]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'license': {'required': False, 'dest': 'license', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:46:55 gparsing.py:143 
+POST PROCESSING
+
+DEBUG 2025-11-14 08:46:55 gparsing.py:144 (raw) parsed args: Namespace()
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.policies.act.configuration_act.ACTConfig'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_obs_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = normalization_mapping, type = dict[str, lerobot.configs.types.NormalizationMode]
+DEBUG 2025-11-14 08:46:55 decoding.py:261 Decoding a Dict field: dict[str, lerobot.configs.types.NormalizationMode]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = input_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:46:55 decoding.py:261 Decoding a Dict field: dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:46:55 decoding.py:275 Decoding a Tuple field: <class 'tuple'>
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = output_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = device, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:293 Decoding a Union field: typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = use_amp, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = push_to_hub, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = repo_id, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = private, type = typing.Optional[bool]
+DEBUG 2025-11-14 08:46:55 decoding.py:293 Decoding a Union field: typing.Optional[bool]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = tags, type = typing.Optional[list[str]]
+DEBUG 2025-11-14 08:46:55 decoding.py:293 Decoding a Union field: typing.Optional[list[str]]
+DEBUG 2025-11-14 08:46:55 decoding.py:282 Decoding a List field: list[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = license, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = chunk_size, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_action_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = vision_backbone, type = <class 'str'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = pretrained_backbone_weights, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = replace_final_stride_with_dilation, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = pre_norm, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = dim_model, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_heads, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = dim_feedforward, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = feedforward_activation, type = <class 'str'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_encoder_layers, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_decoder_layers, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = use_vae, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = latent_dim, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_vae_encoder_layers, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = temporal_ensemble_coeff, type = typing.Optional[float]
+DEBUG 2025-11-14 08:46:55 decoding.py:293 Decoding a Union field: typing.Optional[float]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = dropout, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = kl_weight, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = optimizer_lr, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = optimizer_weight_decay, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = optimizer_lr_backbone, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 d_metavar.py:22 Metavar for type None: None
+DEBUG 2025-11-14 08:46:55 formatter.py:52 action type: None, Result: , nargs: 0, default metavar: None
+DEBUG 2025-11-14 08:46:55 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 08:46:55 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at n_obs_steps has a default value of 1
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at normalization_mapping has a default value of {'VISUAL': <NormalizationMode.MEAN_STD: 'MEAN_STD'>, 'STATE': <NormalizationMode.MEAN_STD: 'MEAN_STD'>, 'ACTION': <NormalizationMode.MEAN_STD: 'MEAN_STD'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at input_features has a default value of {}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at output_features has a default value of {}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at device has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at use_amp has a default value of False
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at push_to_hub has a default value of True
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at repo_id has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at private has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at tags has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at license has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at chunk_size has a default value of 100
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at n_action_steps has a default value of 100
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at vision_backbone has a default value of resnet18
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at pretrained_backbone_weights has a default value of ResNet18_Weights.IMAGENET1K_V1
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at replace_final_stride_with_dilation has a default value of False
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at pre_norm has a default value of False
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at dim_model has a default value of 512
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at n_heads has a default value of 8
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at dim_feedforward has a default value of 3200
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at feedforward_activation has a default value of relu
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at n_encoder_layers has a default value of 4
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at n_decoder_layers has a default value of 1
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at use_vae has a default value of True
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at latent_dim has a default value of 32
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at n_vae_encoder_layers has a default value of 4
+DEBUG 2025-11-14 08:46:55 _wrapper.py:201 wrapped field at temporal_ensemble_coeff has a default value of None
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at dropout has a default value of 0.1
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at kl_weight has a default value of 10.0
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at optimizer_lr has a default value of 1e-05
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at optimizer_weight_decay has a default value of 0.0001
+DEBUG 2025-11-14 08:46:55 _wrapper.py:168 wrapped field at optimizer_lr_backbone has a default value of 1e-05
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             current step and additional steps going back).
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'n_obs_steps': {'required': False, 'dest': 'n_obs_steps', 'default': 1, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:         default_factory=lambda: {
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'normalization_mapping': {'required': False, 'dest': 'normalization_mapping', 'default': {'VISUAL': <NormalizationMode.MEAN_STD: 'MEAN_STD'>, 'STATE': <NormalizationMode.MEAN_STD: 'MEAN_STD'>, 'ACTION': <NormalizationMode.MEAN_STD: 'MEAN_STD'>}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.NormalizationMode]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'input_features': {'required': False, 'dest': 'input_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'output_features': {'required': False, 'dest': 'output_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'device': {'required': False, 'dest': 'device', 'default': None, 'help': 'cuda | cpu | mp', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'use_amp': {'required': False, 'dest': 'use_amp', 'default': False, 'help': '`use_amp` determines whether to use Automatic Mixed Precision (AMP) for training and evaluation. With AMP,\nautomatic gradient scaling is used.', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'push_to_hub': {'required': False, 'dest': 'push_to_hub', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'repo_id': {'required': False, 'dest': 'repo_id', 'default': None, 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'private': {'required': False, 'dest': 'private', 'default': None, 'help': 'Upload on private repository on the Hugging Face hub.', 'type': typing.Optional[bool]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'tags': {'required': False, 'dest': 'tags', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[typing.List[str]]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'license': {'required': False, 'dest': 'license', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'chunk_size': {'required': False, 'dest': 'chunk_size', 'default': 100, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             This should be no greater than the chunk size. For example, if the chunk size size 100, you may
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'n_action_steps': {'required': False, 'dest': 'n_action_steps', 'default': 100, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'vision_backbone': {'required': False, 'dest': 'vision_backbone', 'default': 'resnet18', 'help': ' ', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             `None` means no pretrained weights.
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'pretrained_backbone_weights': {'required': False, 'dest': 'pretrained_backbone_weights', 'default': 'ResNet18_Weights.IMAGENET1K_V1', 'help': ' ', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             convolution.
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'replace_final_stride_with_dilation': {'required': False, 'dest': 'replace_final_stride_with_dilation', 'default': False, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'pre_norm': {'required': False, 'dest': 'pre_norm', 'default': False, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'dim_model': {'required': False, 'dest': 'dim_model', 'default': 512, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'n_heads': {'required': False, 'dest': 'n_heads', 'default': 8, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             layers.
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'dim_feedforward': {'required': False, 'dest': 'dim_feedforward', 'default': 3200, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'feedforward_activation': {'required': False, 'dest': 'feedforward_activation', 'default': 'relu', 'help': ' ', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'n_encoder_layers': {'required': False, 'dest': 'n_encoder_layers', 'default': 4, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'n_decoder_layers': {'required': False, 'dest': 'n_decoder_layers', 'default': 1, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             which is used as the VAE's encoder (not to be confused with the transformer encoder - see
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'use_vae': {'required': False, 'dest': 'use_vae', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'latent_dim': {'required': False, 'dest': 'latent_dim', 'default': 32, 'help': '\n', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'n_vae_encoder_layers': {'required': False, 'dest': 'n_vae_encoder_layers', 'default': 4, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:46:55 ocstring.py:253 Warning: Unable to parse attribute docstring:             ensembling. Defaults to None which means temporal ensembling is not used. `n_action_steps` must be
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'temporal_ensemble_coeff': {'required': False, 'dest': 'temporal_ensemble_coeff', 'default': None, 'type': typing.Optional[float]}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'dropout': {'required': False, 'dest': 'dropout', 'default': 0.1, 'help': '\n\n', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'kl_weight': {'required': False, 'dest': 'kl_weight', 'default': 10.0, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'optimizer_lr': {'required': False, 'dest': 'optimizer_lr', 'default': 1e-05, 'help': 'Training preset', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'optimizer_weight_decay': {'required': False, 'dest': 'optimizer_weight_decay', 'default': 0.0001, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:46:55 _wrapper.py:309 Arg options for field 'optimizer_lr_backbone': {'required': False, 'dest': 'optimizer_lr_backbone', 'default': 1e-05, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:46:55 gparsing.py:143 
+POST PROCESSING
+
+DEBUG 2025-11-14 08:46:55 gparsing.py:144 (raw) parsed args: Namespace()
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.policies.act.configuration_act.ACTConfig'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_obs_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = normalization_mapping, type = dict[str, lerobot.configs.types.NormalizationMode]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = input_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = output_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:46:55 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = device, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = use_amp, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = push_to_hub, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = repo_id, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = private, type = typing.Optional[bool]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = tags, type = typing.Optional[list[str]]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = license, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = chunk_size, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_action_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = vision_backbone, type = <class 'str'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = pretrained_backbone_weights, type = typing.Optional[str]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = replace_final_stride_with_dilation, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = pre_norm, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = dim_model, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_heads, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = dim_feedforward, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = feedforward_activation, type = <class 'str'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_encoder_layers, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_decoder_layers, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = use_vae, type = <class 'bool'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = latent_dim, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = n_vae_encoder_layers, type = <class 'int'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = temporal_ensemble_coeff, type = typing.Optional[float]
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = dropout, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = kl_weight, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = optimizer_lr, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = optimizer_weight_decay, type = <class 'float'>
+DEBUG 2025-11-14 08:46:55 decoding.py:132 Decode name = optimizer_lr_backbone, type = <class 'float'>
+INFO 2025-11-14 08:46:56 y_server.py:150 Time taken to put policy on cuda: 0.8964 seconds
+DEBUG 2025-11-14 08:46:56 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:46:57 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:46:58 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:46:59 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:00 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:01 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:02 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:03 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:04 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:05 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:06 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:07 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:08 y_server.py:199 Client ipv4:127.0.0.1:55638 connected for action streaming
+DEBUG 2025-11-14 08:47:08 y_server.py:157 Receiving observations from ipv4:127.0.0.1:55638
+INFO 2025-11-14 08:47:08 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 08:47:08 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 08:47:08 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 08:47:08 y_server.py:167 Received observation #0
+INFO 2025-11-14 08:47:08 y_server.py:175 Received observation #0 | Avg FPS: 0.00 | Target: 30.00 | One-way latency: 2.31ms
+DEBUG 2025-11-14 08:47:08 y_server.py:182 Server timestamp: 1763081228.594950 | Client timestamp: 1763081228.592636 | Deserialization time: 0.003841s
+DEBUG 2025-11-14 08:47:08 y_server.py:277 Enqueuing observation. Must go: True | Last processed obs: None
+INFO 2025-11-14 08:47:08 y_server.py:205 Running inference for observation #0 (must_go: True)
+DEBUG 2025-11-14 08:47:08 y_server.py:157 Receiving observations from ipv4:127.0.0.1:55638
+INFO 2025-11-14 08:47:08 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 08:47:08 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 08:47:08 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 08:47:08 y_server.py:167 Received observation #0
+INFO 2025-11-14 08:47:08 y_server.py:175 Received observation #0 | Avg FPS: 39.83 | Target: 30.00 | One-way latency: 1.17ms
+DEBUG 2025-11-14 08:47:08 y_server.py:182 Server timestamp: 1763081228.618912 | Client timestamp: 1763081228.617744 | Deserialization time: 0.002673s
+DEBUG 2025-11-14 08:47:08 y_server.py:255 Skipping observation #0 - Timestep predicted already!
+INFO 2025-11-14 08:47:08 y_server.py:191 Observation #0 has been filtered out

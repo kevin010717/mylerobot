@@ -1,0 +1,678 @@
+DEBUG 2025-11-14 08:40:23 d_metavar.py:22 Metavar for type None: None
+DEBUG 2025-11-14 08:40:23 formatter.py:52 action type: None, Result: , nargs: 0, default metavar: None
+DEBUG 2025-11-14 08:40:23 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 08:40:23 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at policy_type has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at pretrained_name_or_path has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at actions_per_chunk has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at task has a default value of 
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at server_address has a default value of localhost:8080
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at policy_device has a default value of cpu
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at chunk_size_threshold has a default value of 0.5
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at fps has a default value of 30
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at aggregate_fn_name has a default value of weighted_average
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at debug_visualize_queue_size has a default value of False
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at verify_robot_cameras has a default value of True
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'policy_type': {'required': False, 'dest': 'policy_type', 'default': None, 'help': 'Policy configuration', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'pretrained_name_or_path': {'required': False, 'dest': 'pretrained_name_or_path', 'default': None, 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 08:40:23 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.id has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.calibration_dir has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.port has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.disable_torque_on_disconnect has a default value of True
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.max_relative_target has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.cameras has a default value of {}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.use_degrees has a default value of False
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.id has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.calibration_dir has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.port has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.disable_torque_on_disconnect has a default value of True
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.max_relative_target has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.cameras has a default value of {}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.use_degrees has a default value of False
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.id has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.calibration_dir has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.port has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.disable_torque_on_disconnect has a default value of True
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.max_relative_target has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.cameras has a default value of {}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.use_degrees has a default value of False
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.urdf_path has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.target_frame_name has a default value of gripper_frame_link
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.end_effector_bounds has a default value of {'min': [-1.0, -1.0, -1.0], 'max': [1.0, 1.0, 1.0]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.max_gripper_pos has a default value of 50
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.end_effector_step_sizes has a default value of {'x': 0.02, 'y': 0.02, 'z': 0.02}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.id has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.calibration_dir has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.port has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.disable_torque_on_disconnect has a default value of True
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.max_relative_target has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.cameras has a default value of {}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.use_degrees has a default value of False
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.id has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.calibration_dir has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.port has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.disable_torque_on_disconnect has a default value of True
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.max_relative_target has a default value of None
+DEBUG 2025-11-14 08:40:23 _wrapper.py:201 wrapped field at robot.cameras has a default value of {}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:168 wrapped field at robot.use_degrees has a default value of False
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'id': {'required': False, 'dest': 'robot.id', 'default': None, 'help': 'Allows to distinguish between different robots of the same type', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'calibration_dir': {'required': False, 'dest': 'robot.calibration_dir', 'default': None, 'help': 'Directory to store calibration file', 'type': typing.Optional[pathlib.Path]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'port': {'required': False, 'dest': 'robot.port', 'default': None, 'help': 'Port to connect to the arm', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'disable_torque_on_disconnect': {'required': False, 'dest': 'robot.disable_torque_on_disconnect', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'max_relative_target': {'required': False, 'dest': 'robot.max_relative_target', 'default': None, 'help': '`max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.\nSet this to a positive scalar to have the same value for all motors, or a list that is the same length as\nthe number of motors in your follower arms.', 'type': typing.Optional[int]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'cameras': {'required': False, 'dest': 'robot.cameras', 'default': {}, 'help': 'cameras', 'type': typing.Dict[str, lerobot.cameras.configs.CameraConfig]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'use_degrees': {'required': False, 'dest': 'robot.use_degrees', 'default': False, 'help': 'Set to `True` for backward compatibility with previous policies/dataset', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'id': {'required': False, 'dest': 'robot.id', 'default': None, 'help': 'Allows to distinguish between different robots of the same type', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'calibration_dir': {'required': False, 'dest': 'robot.calibration_dir', 'default': None, 'help': 'Directory to store calibration file', 'type': typing.Optional[pathlib.Path]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'port': {'required': False, 'dest': 'robot.port', 'default': None, 'help': 'Port to connect to the arm', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'disable_torque_on_disconnect': {'required': False, 'dest': 'robot.disable_torque_on_disconnect', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'max_relative_target': {'required': False, 'dest': 'robot.max_relative_target', 'default': None, 'help': '`max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.\nSet this to a positive scalar to have the same value for all motors, or a list that is the same length as\nthe number of motors in your follower arms.', 'type': typing.Optional[int]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'cameras': {'required': False, 'dest': 'robot.cameras', 'default': {}, 'help': 'cameras', 'type': typing.Dict[str, lerobot.cameras.configs.CameraConfig]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'use_degrees': {'required': False, 'dest': 'robot.use_degrees', 'default': False, 'help': 'Set to `True` for backward compatibility with previous policies/dataset', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'id': {'required': False, 'dest': 'robot.id', 'default': None, 'help': 'Allows to distinguish between different robots of the same type', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'calibration_dir': {'required': False, 'dest': 'robot.calibration_dir', 'default': None, 'help': 'Directory to store calibration file', 'type': typing.Optional[pathlib.Path]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'port': {'required': False, 'dest': 'robot.port', 'default': None, 'help': 'Port to connect to the arm', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'disable_torque_on_disconnect': {'required': False, 'dest': 'robot.disable_torque_on_disconnect', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'max_relative_target': {'required': False, 'dest': 'robot.max_relative_target', 'default': None, 'help': '`max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.\nSet this to a positive scalar to have the same value for all motors, or a list that is the same length as\nthe number of motors in your follower arms.', 'type': typing.Optional[int]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'cameras': {'required': False, 'dest': 'robot.cameras', 'default': {}, 'help': 'cameras', 'type': typing.Dict[str, lerobot.cameras.configs.CameraConfig]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'use_degrees': {'required': False, 'dest': 'robot.use_degrees', 'default': False, 'help': 'Set to `True` for backward compatibility with previous policies/dataset', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'urdf_path': {'required': False, 'dest': 'robot.urdf_path', 'default': None, 'help': 'Path to URDF file for kinematics\nNOTE: It is highly recommended to use the urdf in the SO-ARM100 repo:\nhttps://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/so101_new_calib.urdf', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'target_frame_name': {'required': False, 'dest': 'robot.target_frame_name', 'default': 'gripper_frame_link', 'help': 'End-effector frame name in the URDF', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 ocstring.py:253 Warning: Unable to parse attribute docstring:         default_factory=lambda: {
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'end_effector_bounds': {'required': False, 'dest': 'robot.end_effector_bounds', 'default': {'min': [-1.0, -1.0, -1.0], 'max': [1.0, 1.0, 1.0]}, 'help': 'Default bounds for the end-effector position (in meters)', 'type': typing.Dict[str, typing.List[float]]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'max_gripper_pos': {'required': False, 'dest': 'robot.max_gripper_pos', 'default': 50, 'help': '\n', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:23 ocstring.py:253 Warning: Unable to parse attribute docstring:         default_factory=lambda: {
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'end_effector_step_sizes': {'required': False, 'dest': 'robot.end_effector_step_sizes', 'default': {'x': 0.02, 'y': 0.02, 'z': 0.02}, 'help': ' ', 'type': typing.Dict[str, float]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'id': {'required': False, 'dest': 'robot.id', 'default': None, 'help': 'Allows to distinguish between different robots of the same type', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'calibration_dir': {'required': False, 'dest': 'robot.calibration_dir', 'default': None, 'help': 'Directory to store calibration file', 'type': typing.Optional[pathlib.Path]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'port': {'required': False, 'dest': 'robot.port', 'default': None, 'help': 'Port to connect to the arm', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'disable_torque_on_disconnect': {'required': False, 'dest': 'robot.disable_torque_on_disconnect', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'max_relative_target': {'required': False, 'dest': 'robot.max_relative_target', 'default': None, 'help': '`max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.\nSet this to a positive scalar to have the same value for all motors, or a list that is the same length as\nthe number of motors in your follower arms.', 'type': typing.Optional[int]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'cameras': {'required': False, 'dest': 'robot.cameras', 'default': {}, 'help': 'cameras', 'type': typing.Dict[str, lerobot.cameras.configs.CameraConfig]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'use_degrees': {'required': False, 'dest': 'robot.use_degrees', 'default': False, 'help': 'Set to `True` for backward compatibility with previous policies/dataset', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'id': {'required': False, 'dest': 'robot.id', 'default': None, 'help': 'Allows to distinguish between different robots of the same type', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'calibration_dir': {'required': False, 'dest': 'robot.calibration_dir', 'default': None, 'help': 'Directory to store calibration file', 'type': typing.Optional[pathlib.Path]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'port': {'required': False, 'dest': 'robot.port', 'default': None, 'help': 'Port to connect to the arm', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'disable_torque_on_disconnect': {'required': False, 'dest': 'robot.disable_torque_on_disconnect', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'max_relative_target': {'required': False, 'dest': 'robot.max_relative_target', 'default': None, 'help': '`max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.\n`max_relative_target` 用于限制相对位置目标向量的幅值，以保证安全。\nSet this to a positive scalar to have the same value for all motors, or a list that is the same length as\n可以设置为一个正数（所有电机相同），或设置为一个与从动臂电机数量相同长度的列表。\nthe number of motors in your follower arms.', 'type': typing.Optional[int]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'cameras': {'required': False, 'dest': 'robot.cameras', 'default': {}, 'help': 'cameras', 'type': typing.Dict[str, lerobot.cameras.configs.CameraConfig]}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'use_degrees': {'required': False, 'dest': 'robot.use_degrees', 'default': False, 'help': 'Set to `True` for backward compatibility with previous policies/dataset', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'actions_per_chunk': {'required': False, 'dest': 'actions_per_chunk', 'default': None, 'help': 'Policies typically output K actions at max, but we can use less to avoid wasting bandwidth (as actions\nwould be aggregated on the client side anyway, depending on the value of `chunk_size_threshold`)', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'task': {'required': False, 'dest': 'task', 'default': '', 'help': "Task instruction for the robot to execute (e.g., 'fold my tshirt')", 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'server_address': {'required': False, 'dest': 'server_address', 'default': 'localhost:8080', 'help': 'Network configuration', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'policy_device': {'required': False, 'dest': 'policy_device', 'default': 'cpu', 'help': 'Device configuration', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'chunk_size_threshold': {'required': False, 'dest': 'chunk_size_threshold', 'default': 0.5, 'help': 'Control behavior configuration', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'fps': {'required': False, 'dest': 'fps', 'default': 30, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:23 ocstring.py:253 Warning: Unable to parse attribute docstring:         default="weighted_average",
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'aggregate_fn_name': {'required': False, 'dest': 'aggregate_fn_name', 'default': 'weighted_average', 'help': 'Aggregate function configuration (CLI-compatible)', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:23 ocstring.py:253 Warning: Unable to parse attribute docstring:         default=False, metadata={"help": "Visualize the action queue size"}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'debug_visualize_queue_size': {'required': False, 'dest': 'debug_visualize_queue_size', 'default': False, 'help': '\n\n\nDebug configuration', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 ocstring.py:253 Warning: Unable to parse attribute docstring:         default=True, metadata={"help": "Verify that the robot cameras match the policy cameras"}
+DEBUG 2025-11-14 08:40:23 _wrapper.py:309 Arg options for field 'verify_robot_cameras': {'required': False, 'dest': 'verify_robot_cameras', 'default': True, 'help': '\n\nVerification configuration', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:23 gparsing.py:143 
+POST PROCESSING
+
+DEBUG 2025-11-14 08:40:23 gparsing.py:144 (raw) parsed args: Namespace(server_address='127.0.0.1:8888', policy_type='diffusion', pretrained_name_or_path='outputs/11-12/diffusion/checkpoints/last/pretrained_model', policy_device='cuda', actions_per_chunk='50', chunk_size_threshold='0.5', aggregate_fn_name='weighted_average', debug_visualize_queue_size='true', fps='30', **{'robot.type': 'cr5af_follower', 'robot.port': '/dev/ttyACM1', 'robot.id': 'my_awesome_follower_arm', 'robot.disable_torque_on_disconnect': 'true', 'robot.use_degrees': 'false', 'robot.cameras': '{"front": {"type": "opencv", "index_or_path": 2, "width": 640, "height": 480, "fps": 30}}'})
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.scripts.server.configs.RobotClientConfig'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = policy_type, type = <class 'str'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = pretrained_name_or_path, type = <class 'str'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = robot, type = <class 'lerobot.robots.config.RobotConfig'>
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.robots.cr5af_follower.config_cr5af_follower.CR5AFFOLLOWERConfig'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = id, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:23 decoding.py:293 Decoding a Union field: typing.Optional[str]
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = port, type = <class 'str'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = disable_torque_on_disconnect, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = cameras, type = dict[str, lerobot.cameras.configs.CameraConfig]
+DEBUG 2025-11-14 08:40:23 decoding.py:261 Decoding a Dict field: dict[str, lerobot.cameras.configs.CameraConfig]
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.cameras.opencv.configuration_opencv.OpenCVCameraConfig'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = fps, type = typing.Optional[int]
+DEBUG 2025-11-14 08:40:23 decoding.py:293 Decoding a Union field: typing.Optional[int]
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = width, type = typing.Optional[int]
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = height, type = typing.Optional[int]
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = index_or_path, type = typing.Union[int, pathlib.Path]
+DEBUG 2025-11-14 08:40:23 decoding.py:293 Decoding a Union field: typing.Union[int, pathlib.Path]
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = use_degrees, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = actions_per_chunk, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = server_address, type = <class 'str'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = policy_device, type = <class 'str'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = chunk_size_threshold, type = <class 'float'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = fps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = aggregate_fn_name, type = <class 'str'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = debug_visualize_queue_size, type = <class 'bool'>
+INFO 2025-11-14 08:40:23 t_client.py:484 {'actions_per_chunk': 50,
+ 'aggregate_fn_name': 'weighted_average',
+ 'chunk_size_threshold': 0.5,
+ 'debug_visualize_queue_size': True,
+ 'fps': 30,
+ 'policy_device': 'cuda',
+ 'policy_type': 'diffusion',
+ 'pretrained_name_or_path': 'outputs/11-12/diffusion/checkpoints/last/pretrained_model',
+ 'robot': {'calibration_dir': None,
+           'cameras': {'front': {'color_mode': <ColorMode.RGB: 'rgb'>,
+                                 'fps': 30,
+                                 'height': 480,
+                                 'index_or_path': 2,
+                                 'rotation': <Cv2Rotation.NO_ROTATION: 0>,
+                                 'warmup_s': 1,
+                                 'width': 640}},
+           'disable_torque_on_disconnect': True,
+           'id': 'my_awesome_follower_arm',
+           'max_relative_target': None,
+           'port': '/dev/ttyACM1',
+           'use_degrees': False},
+ 'server_address': '127.0.0.1:8888',
+ 'task': '',
+ 'verify_robot_cameras': True}
+DEBUG 2025-11-14 08:40:23 decoding.py:261 Decoding a Dict field: typing.Dict[str, lerobot.motors.motors_bus.MotorCalibration]
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.motors.motors_bus.MotorCalibration'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = id, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = drive_mode, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = homing_offset, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_min, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_max, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.motors.motors_bus.MotorCalibration'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = id, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = drive_mode, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = homing_offset, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_min, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_max, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.motors.motors_bus.MotorCalibration'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = id, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = drive_mode, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = homing_offset, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_min, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_max, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.motors.motors_bus.MotorCalibration'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = id, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = drive_mode, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = homing_offset, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_min, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_max, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.motors.motors_bus.MotorCalibration'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = id, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = drive_mode, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = homing_offset, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_min, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_max, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:112 from_dict for <class 'lerobot.motors.motors_bus.MotorCalibration'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = id, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = drive_mode, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = homing_offset, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_min, type = <class 'int'>
+DEBUG 2025-11-14 08:40:23 decoding.py:132 Decode name = range_max, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 a_opencv.py:328 OpenCVCamera(2) read took: 441.0ms
+DEBUG 2025-11-14 08:40:24 a_opencv.py:328 OpenCVCamera(2) read took: 0.4ms
+DEBUG 2025-11-14 08:40:24 a_opencv.py:328 OpenCVCamera(2) read took: 0.3ms
+DEBUG 2025-11-14 08:40:24 a_opencv.py:328 OpenCVCamera(2) read took: 0.3ms
+DEBUG 2025-11-14 08:40:24 a_opencv.py:328 OpenCVCamera(2) read took: 0.3ms
+DEBUG 2025-11-14 08:40:24 a_opencv.py:328 OpenCVCamera(2) read took: 0.3ms
+INFO 2025-11-14 08:40:24 a_opencv.py:179 OpenCVCamera(2) connected.
+INFO 2025-11-14 08:40:24 follower.py:216 my_awesome_follower_arm CR5AFFollower connected.
+DEBUG 2025-11-14 08:40:24 d_metavar.py:22 Metavar for type None: None
+DEBUG 2025-11-14 08:40:24 formatter.py:52 action type: None, Result: , nargs: 0, default metavar: None
+DEBUG 2025-11-14 08:40:24 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 08:40:24 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 08:40:24 _wrapper.py:168 wrapped field at n_obs_steps has a default value of 1
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at normalization_mapping has a default value of {}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at input_features has a default value of {}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at output_features has a default value of {}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at device has a default value of None
+DEBUG 2025-11-14 08:40:24 _wrapper.py:168 wrapped field at use_amp has a default value of False
+DEBUG 2025-11-14 08:40:24 _wrapper.py:168 wrapped field at push_to_hub has a default value of True
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at repo_id has a default value of None
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at private has a default value of None
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at tags has a default value of None
+DEBUG 2025-11-14 08:40:24 _wrapper.py:201 wrapped field at license has a default value of None
+DEBUG 2025-11-14 08:40:24 ocstring.py:253 Warning: Unable to parse attribute docstring:             current step and additional steps going back).
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'n_obs_steps': {'required': False, 'dest': 'n_obs_steps', 'default': 1, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'normalization_mapping': {'required': False, 'dest': 'normalization_mapping', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.NormalizationMode]}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'input_features': {'required': False, 'dest': 'input_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'output_features': {'required': False, 'dest': 'output_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'device': {'required': False, 'dest': 'device', 'default': None, 'help': 'cuda | cpu | mp', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'use_amp': {'required': False, 'dest': 'use_amp', 'default': False, 'help': '`use_amp` determines whether to use Automatic Mixed Precision (AMP) for training and evaluation. With AMP,\nautomatic gradient scaling is used.', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'push_to_hub': {'required': False, 'dest': 'push_to_hub', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'repo_id': {'required': False, 'dest': 'repo_id', 'default': None, 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'private': {'required': False, 'dest': 'private', 'default': None, 'help': 'Upload on private repository on the Hugging Face hub.', 'type': typing.Optional[bool]}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'tags': {'required': False, 'dest': 'tags', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[typing.List[str]]}
+DEBUG 2025-11-14 08:40:24 _wrapper.py:309 Arg options for field 'license': {'required': False, 'dest': 'license', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:24 gparsing.py:143 
+POST PROCESSING
+
+DEBUG 2025-11-14 08:40:24 gparsing.py:144 (raw) parsed args: Namespace()
+DEBUG 2025-11-14 08:40:24 decoding.py:112 from_dict for <class 'lerobot.policies.diffusion.configuration_diffusion.DiffusionConfig'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = n_obs_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = normalization_mapping, type = dict[str, lerobot.configs.types.NormalizationMode]
+DEBUG 2025-11-14 08:40:24 decoding.py:261 Decoding a Dict field: dict[str, lerobot.configs.types.NormalizationMode]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = input_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:40:24 decoding.py:261 Decoding a Dict field: dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:40:24 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:24 decoding.py:275 Decoding a Tuple field: <class 'tuple'>
+DEBUG 2025-11-14 08:40:24 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = output_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:40:24 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = device, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = use_amp, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = push_to_hub, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = repo_id, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = private, type = typing.Optional[bool]
+DEBUG 2025-11-14 08:40:24 decoding.py:293 Decoding a Union field: typing.Optional[bool]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = tags, type = typing.Optional[list[str]]
+DEBUG 2025-11-14 08:40:24 decoding.py:293 Decoding a Union field: typing.Optional[list[str]]
+DEBUG 2025-11-14 08:40:24 decoding.py:282 Decoding a List field: list[str]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = license, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = horizon, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = n_action_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = drop_n_last_frames, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = vision_backbone, type = <class 'str'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = crop_shape, type = typing.Optional[tuple[int, int]]
+DEBUG 2025-11-14 08:40:24 decoding.py:293 Decoding a Union field: typing.Optional[tuple[int, int]]
+DEBUG 2025-11-14 08:40:24 decoding.py:275 Decoding a Tuple field: tuple[int, int]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = crop_is_random, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = pretrained_backbone_weights, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = use_group_norm, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = spatial_softmax_num_keypoints, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = use_separate_rgb_encoder_per_camera, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = down_dims, type = tuple[int, ...]
+DEBUG 2025-11-14 08:40:24 decoding.py:275 Decoding a Tuple field: tuple[int, ...]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = kernel_size, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = n_groups, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = diffusion_step_embed_dim, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = use_film_scale_modulation, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = noise_scheduler_type, type = <class 'str'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = num_train_timesteps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = beta_schedule, type = <class 'str'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = beta_start, type = <class 'float'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = beta_end, type = <class 'float'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = prediction_type, type = <class 'str'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = clip_sample, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = clip_sample_range, type = <class 'float'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = num_inference_steps, type = typing.Optional[int]
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = do_mask_loss_for_padding, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = optimizer_lr, type = <class 'float'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = optimizer_betas, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = optimizer_eps, type = <class 'float'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = optimizer_weight_decay, type = <class 'float'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = scheduler_name, type = <class 'str'>
+DEBUG 2025-11-14 08:40:24 decoding.py:132 Decode name = scheduler_warmup_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 d_metavar.py:22 Metavar for type None: None
+DEBUG 2025-11-14 08:40:25 formatter.py:52 action type: None, Result: , nargs: 0, default metavar: None
+DEBUG 2025-11-14 08:40:25 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 08:40:25 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at n_obs_steps has a default value of 2
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at normalization_mapping has a default value of {'VISUAL': <NormalizationMode.MEAN_STD: 'MEAN_STD'>, 'STATE': <NormalizationMode.MIN_MAX: 'MIN_MAX'>, 'ACTION': <NormalizationMode.MIN_MAX: 'MIN_MAX'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at input_features has a default value of {}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at output_features has a default value of {}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at device has a default value of None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at use_amp has a default value of False
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at push_to_hub has a default value of True
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at repo_id has a default value of None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at private has a default value of None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at tags has a default value of None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at license has a default value of None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at horizon has a default value of 16
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at n_action_steps has a default value of 8
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at drop_n_last_frames has a default value of 7
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at vision_backbone has a default value of resnet18
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at crop_shape has a default value of (84, 84)
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at crop_is_random has a default value of True
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at pretrained_backbone_weights has a default value of None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at use_group_norm has a default value of True
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at spatial_softmax_num_keypoints has a default value of 32
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at use_separate_rgb_encoder_per_camera has a default value of False
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at down_dims has a default value of (512, 1024, 2048)
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at kernel_size has a default value of 5
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at n_groups has a default value of 8
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at diffusion_step_embed_dim has a default value of 128
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at use_film_scale_modulation has a default value of True
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at noise_scheduler_type has a default value of DDPM
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at num_train_timesteps has a default value of 100
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at beta_schedule has a default value of squaredcos_cap_v2
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at beta_start has a default value of 0.0001
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at beta_end has a default value of 0.02
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at prediction_type has a default value of epsilon
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at clip_sample has a default value of True
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at clip_sample_range has a default value of 1.0
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at num_inference_steps has a default value of None
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at do_mask_loss_for_padding has a default value of False
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at optimizer_lr has a default value of 0.0001
+DEBUG 2025-11-14 08:40:25 _wrapper.py:201 wrapped field at optimizer_betas has a default value of (0.95, 0.999)
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at optimizer_eps has a default value of 1e-08
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at optimizer_weight_decay has a default value of 1e-06
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at scheduler_name has a default value of cosine
+DEBUG 2025-11-14 08:40:25 _wrapper.py:168 wrapped field at scheduler_warmup_steps has a default value of 500
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             current step and additional steps going back).
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'n_obs_steps': {'required': False, 'dest': 'n_obs_steps', 'default': 2, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:         default_factory=lambda: {
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'normalization_mapping': {'required': False, 'dest': 'normalization_mapping', 'default': {'VISUAL': <NormalizationMode.MEAN_STD: 'MEAN_STD'>, 'STATE': <NormalizationMode.MIN_MAX: 'MIN_MAX'>, 'ACTION': <NormalizationMode.MIN_MAX: 'MIN_MAX'>}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.NormalizationMode]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'input_features': {'required': False, 'dest': 'input_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'output_features': {'required': False, 'dest': 'output_features', 'default': {}, 'help': ' ', 'type': typing.Dict[str, lerobot.configs.types.PolicyFeature]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'device': {'required': False, 'dest': 'device', 'default': None, 'help': 'cuda | cpu | mp', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'use_amp': {'required': False, 'dest': 'use_amp', 'default': False, 'help': '`use_amp` determines whether to use Automatic Mixed Precision (AMP) for training and evaluation. With AMP,\nautomatic gradient scaling is used.', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'push_to_hub': {'required': False, 'dest': 'push_to_hub', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'repo_id': {'required': False, 'dest': 'repo_id', 'default': None, 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'private': {'required': False, 'dest': 'private', 'default': None, 'help': 'Upload on private repository on the Hugging Face hub.', 'type': typing.Optional[bool]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'tags': {'required': False, 'dest': 'tags', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[typing.List[str]]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'license': {'required': False, 'dest': 'license', 'default': None, 'help': 'Add tags to your policy on the hub.', 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'horizon': {'required': False, 'dest': 'horizon', 'default': 16, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             See `DiffusionPolicy.select_action` for more details.
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'n_action_steps': {'required': False, 'dest': 'n_action_steps', 'default': 8, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'drop_n_last_frames': {'required': False, 'dest': 'drop_n_last_frames', 'default': 7, 'help': 'horizon - n_action_steps - n_obs_steps + 1', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'vision_backbone': {'required': False, 'dest': 'vision_backbone', 'default': 'resnet18', 'help': ' ', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             within the image size. If None, no cropping is done.
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'crop_shape': {'required': False, 'dest': 'crop_shape', 'default': (84, 84), 'help': ' ', 'type': typing.Optional[typing.Tuple[int, int]]}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             mode).
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'crop_is_random': {'required': False, 'dest': 'crop_is_random', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             `None` means no pretrained weights.
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'pretrained_backbone_weights': {'required': False, 'dest': 'pretrained_backbone_weights', 'default': None, 'type': typing.Optional[str]}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             The group sizes are set to be about 16 (to be precise, feature_dim // 16).
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'use_group_norm': {'required': False, 'dest': 'use_group_norm', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'spatial_softmax_num_keypoints': {'required': False, 'dest': 'spatial_softmax_num_keypoints', 'default': 32, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'use_separate_rgb_encoder_per_camera': {'required': False, 'dest': 'use_separate_rgb_encoder_per_camera', 'default': False, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             You may provide a variable number of dimensions, therefore also controlling the degree of
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'down_dims': {'required': False, 'dest': 'down_dims', 'default': (512, 1024, 2048), 'help': ' ', 'type': typing.Tuple[int, ...]}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'kernel_size': {'required': False, 'dest': 'kernel_size', 'default': 5, 'help': '\n', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'n_groups': {'required': False, 'dest': 'n_groups', 'default': 8, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             network. This is the output dimension of that network, i.e., the embedding dimension.
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'diffusion_step_embed_dim': {'required': False, 'dest': 'diffusion_step_embed_dim', 'default': 128, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'use_film_scale_modulation': {'required': False, 'dest': 'use_film_scale_modulation', 'default': True, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'noise_scheduler_type': {'required': False, 'dest': 'noise_scheduler_type', 'default': 'DDPM', 'help': 'Noise scheduler.', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'num_train_timesteps': {'required': False, 'dest': 'num_train_timesteps', 'default': 100, 'help': '\n\n\n\n', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'beta_schedule': {'required': False, 'dest': 'beta_schedule', 'default': 'squaredcos_cap_v2', 'help': ' ', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'beta_start': {'required': False, 'dest': 'beta_start', 'default': 0.0001, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'beta_end': {'required': False, 'dest': 'beta_end', 'default': 0.02, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             or "sample". These have equivalent outcomes from a latent variable modeling perspective, but
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'prediction_type': {'required': False, 'dest': 'prediction_type', 'default': 'epsilon', 'help': ' ', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'clip_sample': {'required': False, 'dest': 'clip_sample', 'default': True, 'help': '\n', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'clip_sample_range': {'required': False, 'dest': 'clip_sample_range', 'default': 1.0, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             spaced). If not provided, this defaults to be the same as `num_train_timesteps`.
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'num_inference_steps': {'required': False, 'dest': 'num_inference_steps', 'default': None, 'type': typing.Optional[int]}
+DEBUG 2025-11-14 08:40:25 ocstring.py:253 Warning: Unable to parse attribute docstring:             `LeRobotDataset` and `load_previous_and_future_frames` for more information. Note, this defaults
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'do_mask_loss_for_padding': {'required': False, 'dest': 'do_mask_loss_for_padding', 'default': False, 'help': ' ', 'type': <class 'bool'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'optimizer_lr': {'required': False, 'dest': 'optimizer_lr', 'default': 0.0001, 'help': 'Training presets', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'optimizer_betas': {'required': False, 'dest': 'optimizer_betas', 'default': (0.95, 0.999), 'help': ' ', 'type': <class 'tuple'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'optimizer_eps': {'required': False, 'dest': 'optimizer_eps', 'default': 1e-08, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'optimizer_weight_decay': {'required': False, 'dest': 'optimizer_weight_decay', 'default': 1e-06, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'scheduler_name': {'required': False, 'dest': 'scheduler_name', 'default': 'cosine', 'help': ' ', 'type': <class 'str'>}
+DEBUG 2025-11-14 08:40:25 _wrapper.py:309 Arg options for field 'scheduler_warmup_steps': {'required': False, 'dest': 'scheduler_warmup_steps', 'default': 500, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 08:40:25 gparsing.py:143 
+POST PROCESSING
+
+DEBUG 2025-11-14 08:40:25 gparsing.py:144 (raw) parsed args: Namespace()
+DEBUG 2025-11-14 08:40:25 decoding.py:112 from_dict for <class 'lerobot.policies.diffusion.configuration_diffusion.DiffusionConfig'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = n_obs_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = normalization_mapping, type = dict[str, lerobot.configs.types.NormalizationMode]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = input_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:40:25 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:25 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = output_features, type = dict[str, lerobot.configs.types.PolicyFeature]
+DEBUG 2025-11-14 08:40:25 decoding.py:112 from_dict for <class 'lerobot.configs.types.PolicyFeature'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = type, type = <enum 'FeatureType'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = shape, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = device, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = use_amp, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = push_to_hub, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = repo_id, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = private, type = typing.Optional[bool]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = tags, type = typing.Optional[list[str]]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = license, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = horizon, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = n_action_steps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = drop_n_last_frames, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = vision_backbone, type = <class 'str'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = crop_shape, type = typing.Optional[tuple[int, int]]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = crop_is_random, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = pretrained_backbone_weights, type = typing.Optional[str]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = use_group_norm, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = spatial_softmax_num_keypoints, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = use_separate_rgb_encoder_per_camera, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = down_dims, type = tuple[int, ...]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = kernel_size, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = n_groups, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = diffusion_step_embed_dim, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = use_film_scale_modulation, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = noise_scheduler_type, type = <class 'str'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = num_train_timesteps, type = <class 'int'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = beta_schedule, type = <class 'str'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = beta_start, type = <class 'float'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = beta_end, type = <class 'float'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = prediction_type, type = <class 'str'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = clip_sample, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = clip_sample_range, type = <class 'float'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = num_inference_steps, type = typing.Optional[int]
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = do_mask_loss_for_padding, type = <class 'bool'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = optimizer_lr, type = <class 'float'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = optimizer_betas, type = <class 'tuple'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = optimizer_eps, type = <class 'float'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = optimizer_weight_decay, type = <class 'float'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = scheduler_name, type = <class 'str'>
+DEBUG 2025-11-14 08:40:25 decoding.py:132 Decode name = scheduler_warmup_steps, type = <class 'int'>
+INFO 2025-11-14 08:40:25 t_client.py:122 Initializing client to connect to server at 127.0.0.1:8888
+INFO 2025-11-14 08:40:25 t_client.py:141 Robot connected and ready
+DEBUG 2025-11-14 08:40:25 t_client.py:158 Connected to policy server in 0.0062s
+INFO 2025-11-14 08:40:25 t_client.py:164 Sending policy instructions to policy server
+DEBUG 2025-11-14 08:40:25 t_client.py:165 Policy type: diffusion | Pretrained name or path: outputs/11-12/diffusion/checkpoints/last/pretrained_model | Device: cuda
+INFO 2025-11-14 08:40:27 t_client.py:492 Starting action receiver thread...
+INFO 2025-11-14 08:40:27 t_client.py:281 Action receiving thread starting
+INFO 2025-11-14 08:40:27 t_client.py:460 Control loop thread starting
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 3.25
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 6.90
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 6.62
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 6.09
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 5.75
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 5.10
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 4.73
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 4.20
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 3.58
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 11.25
+ERROR 2025-11-14 08:40:27 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:27 t_client.py:475 Control loop (ms): 10.49
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 10.32
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 9.95
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 12.49
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 8.85
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 8.20
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 7.51
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 6.99
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 7.26
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 6.71
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 5.82
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 5.45
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 4.67
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 4.36
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 3.62
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 3.64
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 11.71
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 11.19
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 10.82
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 10.07
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 9.56
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 9.16
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 8.58
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 7.89
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 7.36
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 6.53
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 6.17
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 5.30
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 5.36
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 4.37
+ERROR 2025-11-14 08:40:28 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:28 t_client.py:475 Control loop (ms): 4.31
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 11.70
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 11.59
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 10.81
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 9.88
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 9.96
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 9.15
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 8.39
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 7.63
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 6.79
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 6.22
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 5.83
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 5.26
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 4.32
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 3.84
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 11.57
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 10.93
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 10.55
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 9.83
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 9.31
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 8.51
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 7.92
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 7.46
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 7.50
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 6.85
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 6.51
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 5.94
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 5.29
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 5.10
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 4.43
+ERROR 2025-11-14 08:40:29 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:29 t_client.py:475 Control loop (ms): 3.31
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 11.19
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 10.41
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 9.99
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 9.60
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 9.07
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 8.50
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 7.99
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 7.20
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 6.47
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 5.82
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 5.34
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 4.97
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 4.69
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 4.15
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 3.57
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 11.35
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 10.46
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 10.25
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 10.06
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 10.20
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 9.48
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 8.98
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 8.54
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 7.48
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 6.77
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 5.83
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 5.27
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 4.83
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 4.34
+ERROR 2025-11-14 08:40:30 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:30 t_client.py:475 Control loop (ms): 3.79
+ERROR 2025-11-14 08:40:31 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:31 t_client.py:475 Control loop (ms): 11.51
+ERROR 2025-11-14 08:40:31 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:31 t_client.py:475 Control loop (ms): 10.52
+ERROR 2025-11-14 08:40:31 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:31 t_client.py:475 Control loop (ms): 9.96
+ERROR 2025-11-14 08:40:31 t_client.py:454 Error in observation sender: 'CR5AFFollower' object has no attribute 'serial'
+INFO 2025-11-14 08:40:31 t_client.py:475 Control loop (ms): 9.37

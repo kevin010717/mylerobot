@@ -243,10 +243,12 @@ class PolicyServer(services_pb2_grpc.AsyncInferenceServicer):
 
         except Exception as e:
             self.logger.error(f"Error in StreamActions: {e}")
+            # self.logger.exception("Error in GetActions")
 
             return services_pb2.Empty()
 
     def _obs_sanity_checks(self, obs: TimedObservation, previous_obs: TimedObservation) -> bool:
+        # return True
         """Check if the observation is valid to be processed by the policy"""
         with self._predicted_timesteps_lock:
             predicted_timesteps = self._predicted_timesteps
@@ -269,6 +271,7 @@ class PolicyServer(services_pb2_grpc.AsyncInferenceServicer):
         Observations not in queue are never run through the policy network"""
 
         if (
+            # True or
             obs.must_go
             or self.last_processed_obs is None
             or self._obs_sanity_checks(obs, self.last_processed_obs)
@@ -399,5 +402,20 @@ def serve(cfg: PolicyServerConfig):
     policy_server.logger.info("Server terminated")
 
 
+# if __name__ == "__main__":
+#     serve()
+
 if __name__ == "__main__":
-    serve()
+    import sys
+    from lerobot.utils.utils import init_logging
+    init_logging("/home/robot/lerobot/outputs/policy_server-log.txt")
+    # init_logging("/home/robot/lerobot/outputs/policy_server-log.txt",console_level="DEBUG")
+    sys.argv = [
+        "policy_server.py",
+        "--host=0.0.0.0",
+        "--port=8888",
+        "--fps=30",
+        "--inference_latency=0",
+        # "--obs_queue_timeout=1",
+    ]
+    serve()  # run the client

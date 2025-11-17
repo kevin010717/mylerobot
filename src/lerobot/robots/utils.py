@@ -29,6 +29,10 @@ def make_robot_from_config(config: RobotConfig) -> Robot:
         from .so100_follower import SO100Follower
 
         return SO100Follower(config)
+    elif config.type == "cr5af_follower":
+        from .cr5af_follower import CR5AFFollower
+
+        return CR5AFFollower(config)
     elif config.type == "so100_follower_end_effector":
         from .so100_follower import SO100FollowerEndEffector
 

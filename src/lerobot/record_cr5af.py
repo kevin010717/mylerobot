@@ -322,8 +322,8 @@ def record(cfg: RecordConfig) -> LeRobotDataset:
     if cfg.display_data:
         _init_rerun(session_name="recording")
 
-    # robot = make_robot_from_config(cfg.robot)
-    robot = cr5af_follower.CR5AFFollower(cfg.robot)  # FOR CR5AF
+    robot = make_robot_from_config(cfg.robot)
+    # robot = cr5af_follower.CR5AFFollower(cfg.robot)  # FOR CR5AF
     teleop = make_teleoperator_from_config(cfg.teleop) if cfg.teleop is not None else None
 
     action_features = hw_to_dataset_features(robot.action_features, "action", cfg.dataset.video)
@@ -475,15 +475,15 @@ teleop_cfg = gello_leader.GELLOLeaderConfig(
 
 # 4) 数据集/录制配置（对应 --dataset.* 和其他开关）
 dataset_cfg = DatasetRecordConfig(
+    root="/home/robot/lerobot/outputs/record",  # 可选，等价于 --dataset.root=...
     repo_id="seeedstudio123/test",
     single_task="Grab the black cube",
-    num_episodes=10,
+    num_episodes=1,
     push_to_hub=False,
-    episode_time_s=90,
+    episode_time_s=60,
     reset_time_s=10,
     fps=30,
     video=True,
-
 )
 
 # 5) 汇总到 RecordConfig 并开录
@@ -494,7 +494,7 @@ cfg = RecordConfig(
     # display_data=False,   # 等价于 --display_data=true
     display_data=False,   # 等价于 --display_data=true
     play_sounds=True,    # 默认 True
-    resume=True,
+    resume=False,
     # resume=False,
 )
 
@@ -534,9 +534,8 @@ if __name__ == "__main__":
             print(f"Device {device_path} does not exist; skipping chmod.")
     except Exception as e:
         print(f"Unexpected error while setting device permissions: {e}")
-    # 录制
-    # record(cfg)  # This starts the recording process
 
+    # record(cfg)  # This starts the recording process
 
     # After recording, convert the saved parquet file to CSV for easier inspection
     # import pandas as pd
@@ -548,42 +547,78 @@ if __name__ == "__main__":
 
     import sys
     from lerobot.utils.utils import init_logging
-    # 在代码里“伪造”命令行参数
 
-#     lerobot-record \
-#   --robot.type=so101_follower \
-#   --robot.port=/dev/ttyACM1 \
-#   # --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
-#   --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
-#   --robot.id=my_awesome_follower_arm \
-#   --display_data=false \
-#   --dataset.repo_id=seeed/eval_test123 \
-#   --dataset.single_task="Put lego brick into the transparent box" \
-#   --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
-
-    # sys.argv = [
-    #     "record.py",
-    #     "--robot.type=cr5af_follower",
-    #     "--robot.port=/dev/ttyACM1",
-    #     "--robot.cameras='{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}' ",
-    #     "--robot.id=my_awesome_follower_arm",
-    #     "--display_data=false",
-    #     "--dataset.repo_id=seeed/eval_test123",
-    #     "--dataset.single_task='Put lego brick into the transparent box'",
-    #     "--policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model",
-    # ]
+    # 录制
     sys.argv = [
     "record.py",
-    "--robot.type=so101_follower",
-    "--robot.port=/dev/ttyACM1",
-    # "--robot.cameras={front:{type:opencv,index_or_path:2,width:640,height:480,fps:30}}",
-    "--robot.cameras={front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}}",
-    "--robot.id=my_awesome_follower_arm",
-    "--display_data=false",
-    "--dataset.repo_id=seeed/eval_test123",
-    "--dataset.single_task=Put lego brick into the transparent box",
-    "--policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model",
-]
 
-    init_logging()
+    # Robot（CR5 跟随臂 + 相机在 robot 命名空间）
+    "--robot.type=cr5af_follower",
+    "--robot.port=/dev/ttyACM1",
+    "--robot.id=my_awesome_follower_arm",
+    '--robot.cameras={"front": {"type": "opencv", "index_or_path": 2, "width": 640, "height": 480, "fps": 30}}',
+
+    # Teleop（主控臂）
+    "--teleop.type=gello_leader",
+    "--teleop.port=/dev/ttyUSB0",
+    "--teleop.id=my_awesome_leader_arm",
+    "--teleop.use_degrees=true",
+
+    # Dataset（只本地）
+    "--dataset.repo_id=seeedstudio123/test",
+    "--dataset.root=/home/robot/lerobot/outputs/11-14/record",
+    "--dataset.single_task=Grab the black cube",
+    "--dataset.num_episodes=20",
+    "--dataset.episode_time_s=60",
+    "--dataset.reset_time_s=10",        # ← 拼写必须是 reset_time_s
+    "--dataset.fps=30",
+    "--dataset.video=true",
+    "--dataset.push_to_hub=false",      # 不推 Hub，且不要提供 repo_id
+
+    # 其他
+    "--display_data=false",
+    "--play_sounds=true",
+    "--resume=true",
+]
+    # 推理
+    # act
+#     sys.argv = [
+#     "record.py",
+#     "--robot.type=cr5af_follower",
+#     "--robot.port=/dev/ttyACM1",
+#     "--robot.cameras={front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}}",
+#     "--robot.id=my_awesome_follower_arm",
+#     "--display_data=false",
+#     "--dataset.repo_id=seeed/eval_test123",
+#     "--dataset.root=/home/robot/lerobot/outputs/eval1111",                                            # data root
+#     "--dataset.single_task=Put lego brick into the transparent box",
+#     "--policy.path=outputs/act1111/checkpoints/last/pretrained_model",
+# ]
+    # diffusion
+#     sys.argv = [
+#     "record.py",
+#     "--robot.type=cr5af_follower",
+#     "--robot.port=/dev/ttyACM1",
+#     "--robot.cameras={front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}}",
+#     "--robot.id=my_awesome_follower_arm",
+#     "--display_data=false",
+#     "--dataset.repo_id=seeed/eval_test123",
+#     "--dataset.root=/home/robot/lerobot/outputs/eval1111",                                            # data root
+#     "--dataset.single_task=Put lego brick into the transparent box",
+#     "--policy.path=outputs/11-14/diffusion/checkpoints/last/pretrained_model",
+# ]
+    # smolvla
+#     sys.argv = [
+#     "record.py",
+#     "--robot.type=cr5af_follower",
+#     "--robot.port=/dev/ttyACM1",
+#     "--robot.cameras={front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}}",
+#     "--robot.id=my_awesome_follower_arm",
+#     "--display_data=false",
+#     "--dataset.repo_id=seeed/eval_test123",                                                         # data repo
+#     # "--dataset.root=/home/robot/lerobot/outputs/record",                                            # data root
+#     "--dataset.single_task=Put lego brick into the transparent box",
+#     "--policy.path=outputs/smolvlatest/checkpoints/last/pretrained_model",                              # pretrain model
+# ]
+    init_logging("/home/robot/lerobot/outputs/11-14/record-log.txt")
     record()

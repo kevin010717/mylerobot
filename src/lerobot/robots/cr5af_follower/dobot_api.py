@@ -3315,16 +3315,16 @@ class DobotDemo1:
             self.move_joint()
             print("重置所有关节为 0°")
             return
-        if ch == 'z':
-            self.joint_pos = [random.uniform(-30,30) for _ in range(6)]
-            self.move_joint()
-            print("随机化关节角度")
-            return
+        # if ch == 'z':
+        #     self.joint_pos = [random.uniform(-30,30) for _ in range(6)]
+        #     self.move_joint()
+        #     print("随机化关节角度")
+        #     return
 
     def move_joint(self):
-        # recvmovemess = self.dashboard.MovJ(*self.joint_pos, 1)
+        recvmovemess = self.dashboard.MovJ(*self.joint_pos, 1)
         # recvmovemess = self.dashboard.ServoJ(*self.joint_pos, 0.5)
-        recvmovemess = self.dashboard.ServoJ(*self.joint_pos, 1)
+        # recvmovemess = self.dashboard.ServoJ(*self.joint_pos, 1)
         print("发送 MovJ:", recvmovemess)
 
     def parseResultId(self, valueRecv):

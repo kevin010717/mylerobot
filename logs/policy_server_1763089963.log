@@ -1,0 +1,170 @@
+DEBUG 2025-11-14 11:12:43 d_metavar.py:22 Metavar for type None: None
+DEBUG 2025-11-14 11:12:43 formatter.py:52 action type: None, Result: , nargs: 0, default metavar: None
+DEBUG 2025-11-14 11:12:43 d_metavar.py:22 Metavar for type <class 'str'>: str
+DEBUG 2025-11-14 11:12:43 formatter.py:52 action type: <class 'str'>, Result: str, nargs: None, default metavar: None
+DEBUG 2025-11-14 11:12:43 _wrapper.py:168 wrapped field at host has a default value of localhost
+DEBUG 2025-11-14 11:12:43 _wrapper.py:168 wrapped field at port has a default value of 8080
+DEBUG 2025-11-14 11:12:43 _wrapper.py:168 wrapped field at fps has a default value of 30
+DEBUG 2025-11-14 11:12:43 _wrapper.py:168 wrapped field at inference_latency has a default value of 0.03333333333333333
+DEBUG 2025-11-14 11:12:43 _wrapper.py:168 wrapped field at obs_queue_timeout has a default value of 2
+DEBUG 2025-11-14 11:12:43 _wrapper.py:309 Arg options for field 'host': {'required': False, 'dest': 'host', 'default': 'localhost', 'help': 'Networking configuration', 'type': <class 'str'>}
+DEBUG 2025-11-14 11:12:43 _wrapper.py:309 Arg options for field 'port': {'required': False, 'dest': 'port', 'default': 8080, 'help': ' ', 'type': <class 'int'>}
+DEBUG 2025-11-14 11:12:43 _wrapper.py:309 Arg options for field 'fps': {'required': False, 'dest': 'fps', 'default': 30, 'help': 'Timing configuration', 'type': <class 'int'>}
+DEBUG 2025-11-14 11:12:43 ocstring.py:253 Warning: Unable to parse attribute docstring:         default=DEFAULT_INFERENCE_LATENCY, metadata={"help": "Target inference latency in seconds"}
+DEBUG 2025-11-14 11:12:43 _wrapper.py:309 Arg options for field 'inference_latency': {'required': False, 'dest': 'inference_latency', 'default': 0.03333333333333333, 'help': ' ', 'type': <class 'float'>}
+DEBUG 2025-11-14 11:12:43 ocstring.py:253 Warning: Unable to parse attribute docstring:         default=DEFAULT_OBS_QUEUE_TIMEOUT, metadata={"help": "Timeout for observation queue in seconds"}
+DEBUG 2025-11-14 11:12:43 _wrapper.py:309 Arg options for field 'obs_queue_timeout': {'required': False, 'dest': 'obs_queue_timeout', 'default': 2, 'help': '\n', 'type': <class 'float'>}
+DEBUG 2025-11-14 11:12:43 gparsing.py:143 
+POST PROCESSING
+
+DEBUG 2025-11-14 11:12:43 gparsing.py:144 (raw) parsed args: Namespace(host='0.0.0.0', port='8888', fps='30', inference_latency='0.033', obs_queue_timeout='1')
+DEBUG 2025-11-14 11:12:43 decoding.py:112 from_dict for <class 'lerobot.scripts.server.configs.PolicyServerConfig'>
+DEBUG 2025-11-14 11:12:43 decoding.py:132 Decode name = host, type = <class 'str'>
+DEBUG 2025-11-14 11:12:43 decoding.py:132 Decode name = port, type = <class 'int'>
+DEBUG 2025-11-14 11:12:43 decoding.py:132 Decode name = fps, type = <class 'int'>
+DEBUG 2025-11-14 11:12:43 decoding.py:132 Decode name = inference_latency, type = <class 'float'>
+DEBUG 2025-11-14 11:12:43 decoding.py:132 Decode name = obs_queue_timeout, type = <class 'float'>
+INFO 2025-11-14 11:12:43 y_server.py:385 {'fps': 30,
+ 'host': '0.0.0.0',
+ 'inference_latency': 0.033,
+ 'obs_queue_timeout': 1.0,
+ 'port': 8888}
+INFO 2025-11-14 11:12:43 y_server.py:395 PolicyServer started on 0.0.0.0:8888
+DEBUG 2025-11-14 11:12:44 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:12:44 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:12:44 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:12:44 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:12:44 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:12:44 y_server.py:175 Received observation #0 | Avg FPS: 0.00 | Target: 30.00 | One-way latency: 31.61ms
+DEBUG 2025-11-14 11:12:44 y_server.py:182 Server timestamp: 1763089964.397914 | Client timestamp: 1763089964.366307 | Deserialization time: 0.002608s
+DEBUG 2025-11-14 11:12:44 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:12:48 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+INFO 2025-11-14 11:12:48 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:12:48 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:12:48 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:12:50 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:12:50 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:12:50 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:12:50 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:12:50 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:12:50 y_server.py:175 Received observation #0 | Avg FPS: 0.22 | Target: 30.00 | One-way latency: 1803.66ms
+DEBUG 2025-11-14 11:12:50 y_server.py:182 Server timestamp: 1763089970.706872 | Client timestamp: 1763089968.903208 | Deserialization time: 0.002720s
+DEBUG 2025-11-14 11:12:52 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:12:54 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:12:55 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:12:55 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:12:55 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:12:55 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:12:55 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:12:55 y_server.py:175 Received observation #0 | Avg FPS: 0.20 | Target: 30.00 | One-way latency: 1002.91ms
+DEBUG 2025-11-14 11:12:55 y_server.py:182 Server timestamp: 1763089975.183776 | Client timestamp: 1763089974.180863 | Deserialization time: 0.002419s
+INFO 2025-11-14 11:12:58 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:12:58 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:12:58 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:12:59 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+INFO 2025-11-14 11:13:03 y_server.py:205 Running inference for observation #0 (must_go: False)
+DEBUG 2025-11-14 11:13:09 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:13:09 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:13:09 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:13:09 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:13:09 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:13:09 y_server.py:175 Received observation #0 | Avg FPS: 0.12 | Target: 30.00 | One-way latency: 1.00ms
+DEBUG 2025-11-14 11:13:09 y_server.py:182 Server timestamp: 1763089989.350600 | Client timestamp: 1763089989.349600 | Deserialization time: 0.001777s
+ERROR 2025-11-14 11:13:11 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:13:11 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:13:12 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:13:12 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:13:12 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:13:12 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:13:12 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:13:12 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:13:12 y_server.py:175 Received observation #0 | Avg FPS: 0.14 | Target: 30.00 | One-way latency: 0.92ms
+DEBUG 2025-11-14 11:13:12 y_server.py:182 Server timestamp: 1763089992.574229 | Client timestamp: 1763089992.573313 | Deserialization time: 0.001752s
+INFO 2025-11-14 11:13:14 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:13:14 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:13:14 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:13:15 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:13:15 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:13:15 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:13:15 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:13:15 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:13:15 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:13:15 y_server.py:175 Received observation #0 | Avg FPS: 0.16 | Target: 30.00 | One-way latency: 1.00ms
+DEBUG 2025-11-14 11:13:15 y_server.py:182 Server timestamp: 1763089995.980889 | Client timestamp: 1763089995.979888 | Deserialization time: 0.002209s
+INFO 2025-11-14 11:15:39 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:15:39 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:15:39 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:15:41 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+INFO 2025-11-14 11:15:44 y_server.py:205 Running inference for observation #0 (must_go: False)
+DEBUG 2025-11-14 11:15:46 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:15:46 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:15:46 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:15:46 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:15:46 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:15:46 y_server.py:175 Received observation #0 | Avg FPS: 0.03 | Target: 30.00 | One-way latency: 4204.83ms
+DEBUG 2025-11-14 11:15:46 y_server.py:182 Server timestamp: 1763090146.055086 | Client timestamp: 1763090141.850256 | Deserialization time: 0.000965s
+ERROR 2025-11-14 11:15:48 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:15:48 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:15:49 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:15:51 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:15:51 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:15:51 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:15:51 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:15:51 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:15:51 y_server.py:175 Received observation #0 | Avg FPS: 0.04 | Target: 30.00 | One-way latency: 2003.14ms
+DEBUG 2025-11-14 11:15:51 y_server.py:182 Server timestamp: 1763090151.532999 | Client timestamp: 1763090149.529857 | Deserialization time: 0.001405s
+INFO 2025-11-14 11:16:19 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:16:19 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:16:19 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:16:21 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:16:22 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:16:22 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:16:22 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:16:22 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:16:22 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:16:22 y_server.py:175 Received observation #0 | Avg FPS: 0.04 | Target: 30.00 | One-way latency: 1002.97ms
+DEBUG 2025-11-14 11:16:22 y_server.py:182 Server timestamp: 1763090182.277037 | Client timestamp: 1763090181.274069 | Deserialization time: 0.001096s
+INFO 2025-11-14 11:16:24 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:16:24 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:16:24 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:16:26 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:16:26 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:16:26 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:16:26 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:16:26 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:16:26 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:16:26 y_server.py:175 Received observation #0 | Avg FPS: 0.04 | Target: 30.00 | One-way latency: 1.41ms
+DEBUG 2025-11-14 11:16:26 y_server.py:182 Server timestamp: 1763090186.395532 | Client timestamp: 1763090186.394127 | Deserialization time: 0.002652s
+INFO 2025-11-14 11:18:00 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:18:00 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:18:00 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:18:02 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:18:07 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:18:07 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:18:07 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:18:07 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:18:07 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:18:07 y_server.py:175 Received observation #0 | Avg FPS: 0.03 | Target: 30.00 | One-way latency: 4003.48ms
+DEBUG 2025-11-14 11:18:07 y_server.py:182 Server timestamp: 1763090287.165648 | Client timestamp: 1763090283.162167 | Deserialization time: 0.001153s
+INFO 2025-11-14 11:18:11 y_server.py:205 Running inference for observation #0 (must_go: False)
+ERROR 2025-11-14 11:18:11 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:18:11 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:18:13 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+INFO 2025-11-14 11:18:16 y_server.py:205 Running inference for observation #0 (must_go: False)
+DEBUG 2025-11-14 11:18:19 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:18:19 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:18:19 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:18:19 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:18:19 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:18:19 y_server.py:175 Received observation #0 | Avg FPS: 0.03 | Target: 30.00 | One-way latency: 5605.99ms
+DEBUG 2025-11-14 11:18:19 y_server.py:182 Server timestamp: 1763090299.520168 | Client timestamp: 1763090293.914173 | Deserialization time: 0.001137s
+ERROR 2025-11-14 11:18:21 y_server.py:245 Error in StreamActions: 'NoneType' object has no attribute 'config'
+DEBUG 2025-11-14 11:18:21 y_server.py:199 Client ipv4:127.0.0.1:36528 connected for action streaming
+DEBUG 2025-11-14 11:18:23 y_server.py:278 Enqueuing observation. Must go: False | Last processed obs: None
+DEBUG 2025-11-14 11:18:24 y_server.py:157 Receiving observations from ipv4:127.0.0.1:36528
+INFO 2025-11-14 11:18:24 ort/utils.py:74 <Logger policy_server (NOTSET)> Starting receiver
+DEBUG 2025-11-14 11:18:24 ort/utils.py:76 <Logger policy_server (NOTSET)> Received item
+DEBUG 2025-11-14 11:18:24 ort/utils.py:93 <Logger policy_server (NOTSET)> Received data at step end size 922170
+DEBUG 2025-11-14 11:18:24 y_server.py:167 Received observation #0
+INFO 2025-11-14 11:18:24 y_server.py:175 Received observation #0 | Avg FPS: 0.04 | Target: 30.00 | One-way latency: 1202.69ms
+DEBUG 2025-11-14 11:18:24 y_server.py:182 Server timestamp: 1763090304.844724 | Client timestamp: 1763090303.642035 | Deserialization time: 0.001047s

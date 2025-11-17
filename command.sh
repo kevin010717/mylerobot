@@ -1,16 +1,26 @@
- pip install --pre --upgrade torch torchvision torchaudio \
-  --index-url https://download.pytorch.org/whl/nightly/cu128
+pip install datasets==2.19 # 解决 datasets 版本过高导致的问题
+export HF_ENDPOINT=https://hf-mirror.com # 设置 Hugging Face 镜像
 
-lerobot-record \
-  --robot.type=so101_follower \
-  --robot.port=/dev/ttyACM1 \
-  # --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
-  --robot.id=my_awesome_follower_arm \
-  --display_data=false \
-  --dataset.repo_id=seeed/eval_test123 \
-  --dataset.single_task="Put lego brick into the transparent box" \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+pip install -e ".[async]"
+pip install -e ".[pi]"
+pip install pytest # ==7.4.0 # 解决 pytest 版本过高导致的问题
+
+
+# 数据采集经验
+# 1.单手操作
+# 2.夹爪回正
+# 3.先对准，再夹取
+# 4.下探过程缓慢
+
+# todo:
+# 用checkpoint推理
+# 1.lerobot 0.4.1迁移
+# 2.pi groot调试，训练
+# 3.t700机器人数据采集系统搭建                  11.31开工
+# 4.vr，视觉遥操系统搭建，关联仿真，产线数据采集，数据增强
+# 5.openvla openpi opengalaxea框架
+# 6.VLN
+
 
 # pytorch编译
 # 创建并激活 Conda 环境

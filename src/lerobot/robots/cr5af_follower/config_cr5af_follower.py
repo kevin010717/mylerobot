@@ -22,6 +22,7 @@ from ..config import RobotConfig
 
 
 @RobotConfig.register_subclass("cr5af_follower")
+# @RobotConfig.register_choice("cr5af_follower")
 @dataclass
 class CR5AFFOLLOWERConfig(RobotConfig):
     # Port to connect to the arm

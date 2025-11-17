@@ -288,5 +288,16 @@ def main():
     visualize_dataset(dataset, **vars(args))
 
 
+# if __name__ == "__main__":
+#     main()
+
 if __name__ == "__main__":
+    import sys
+    sys.argv = [
+        "visualize_dataset.py",
+        "--root=/home/robot/lerobot/outputs/record1111",
+        "--repo-id=seeedstudio123/test",
+        "--episode-index=1",
+        # "--mode=local",
+    ]
     main()
